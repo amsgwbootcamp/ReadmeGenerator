@@ -8,6 +8,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 // const { data } = await axios.get(
 //     `https://api.github.com/users/${username}/repos`
 //   );
+//https://api.github.com/users/amsgwbootcamp
 
 function promptUser() {
   return inquirer.prompt([
@@ -77,10 +78,10 @@ async function init()
   try {
     const { githubUsername } = await promptUser();
     console.log(githubUsername);
-    const { data } = await axios.get(
-      `https://api.github.com/users/${githubUsername}/repos`
+    const email = await axios.get(
+      `https://api.github.com/users/${githubUsername}/events/public`
     );
-    console.log(data);
+    console.log(email);
     console.log("Retrieved GitHub API");  
     // return writeFileAsync("index.html", generateHTML(answers));
   }

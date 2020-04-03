@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const axios = require("axios");
+var image = "![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)";
 
 const writeFileAsync = util.promisify(fs.writeFile);
 // const url = `https://api.github.com/users/${username}/repos`;
@@ -82,14 +83,14 @@ async function init()
     //const { email } = await axios.get(queryUrl);
     //console.log(email);
     console.log("Getting ready to write file.");  
-    return writeFileAsync("Readme.md", generateReadme());
+    return writeFileAsync("Readme.md", generateReadme(githubUsername));
   }
   catch (err) {
     console.log(err);
   }
 }
 
-function generateReadme()
+function generateReadme(githubUsername)
 {    return "# 07 Readme File Generator" + 
      "\n\n" + 
      "## Project title" +
@@ -109,8 +110,8 @@ function generateReadme()
      "## Tests" +
      "\n\n" +
      "## Questions" +
-     "\n" + "GitHub Username: " + githubUsername
-     "\n" + "Email: "
+     "\n" + "GitHub Username: " + githubUsername +
+     "\n" + "Image: " + image
      ;
 
 };

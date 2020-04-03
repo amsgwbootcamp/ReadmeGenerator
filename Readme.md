@@ -17,5 +17,5 @@
 ## Tests
 
 ## Questions
-GitHub Username: 
-Email: 
+GitHub Username: amsgwbootcamp
+Image: ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)

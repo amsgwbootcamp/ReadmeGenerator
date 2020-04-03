@@ -1,12 +1,12 @@
 # 07 Readme File Generator
 
-## Project title
+#### Project title:Test Project
 
-## Description
+#### Description
 
-## Table of Contents
+#### Table of Contents
 
-## Installation
+#### Installation
 
 ## Usage
 
@@ -18,4 +18,4 @@
 
 ## Questions
 GitHub Username: amsgwbootcamp
-Image: ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+Image: ![Image of Angela's Badge](https://img.shields.io/static/v1?label=Angela%27s+Badge&message=This+is+my+badge&color=red)

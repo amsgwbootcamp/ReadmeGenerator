@@ -2,7 +2,10 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const axios = require("axios");
-var image = "![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)";
+//var image = "![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)";
+//var badge = https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>
+//var badge = "https://img.shields.io/static/v1?label=Angela%27s+Badge&message=This+is+my+badge&color=red";
+var image = "![Image of Angela's Badge](https://img.shields.io/static/v1?label=Angela%27s+Badge&message=This+is+my+badge&color=red)";
 
 const writeFileAsync = util.promisify(fs.writeFile);
 // const url = `https://api.github.com/users/${username}/repos`;
@@ -18,11 +21,12 @@ function promptUser() {
       name: "githubUsername",
       message: "What is your GitHub User Name?"
     }
-    // ,{
-    //   type: "input",
-    //   name: "location",
-    //   message: "Where are you from?"
-    // },
+    ,{
+      type: "input",
+      name: "project",
+      message: "What is the name of your project?"
+    }
+    //,
     // {
     //   type: "input",
     //   name: "hobby",
@@ -77,29 +81,29 @@ async function init()
   console.log("hi");
 
   try {
-    const { githubUsername } = await promptUser();
+    const { githubUsername, project } = await promptUser();
     //var queryUrl = "https://api.github.com/users/" + githubUsername + "/events/public";
     //console.log(githubUsername);
     //const { email } = await axios.get(queryUrl);
     //console.log(email);
     console.log("Getting ready to write file.");  
-    return writeFileAsync("Readme.md", generateReadme(githubUsername));
+    return writeFileAsync("Readme.md", generateReadme(githubUsername, project));
   }
   catch (err) {
     console.log(err);
   }
 }
 
-function generateReadme(githubUsername)
+function generateReadme(githubUsername, project)
 {    return "# 07 Readme File Generator" + 
      "\n\n" + 
-     "## Project title" +
+     "#### Project title:" + project +
      "\n\n" +
-     "## Description" +
+     "#### Description" +
      "\n\n" +
-     "## Table of Contents" +
+     "#### Table of Contents" +
      "\n\n" +
-     "## Installation" +
+     "#### Installation" +
      "\n\n" +
      "## Usage" +
      "\n\n" +

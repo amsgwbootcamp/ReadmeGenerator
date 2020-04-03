@@ -77,17 +77,42 @@ async function init()
 
   try {
     const { githubUsername } = await promptUser();
-    console.log(githubUsername);
-    const email = await axios.get(
-      `https://api.github.com/users/${githubUsername}/events/public`
-    );
-    console.log(email);
-    console.log("Retrieved GitHub API");  
-    // return writeFileAsync("index.html", generateHTML(answers));
+    //var queryUrl = "https://api.github.com/users/" + githubUsername + "/events/public";
+    //console.log(githubUsername);
+    //const { email } = await axios.get(queryUrl);
+    //console.log(email);
+    console.log("Getting ready to write file.");  
+    return writeFileAsync("Readme.md", generateReadme());
   }
   catch (err) {
     console.log(err);
   }
 }
- 
+
+function generateReadme()
+{    return "# 07 Readme File Generator" + 
+     "\n\n" + 
+     "## Project title" +
+     "\n\n" +
+     "## Description" +
+     "\n\n" +
+     "## Table of Contents" +
+     "\n\n" +
+     "## Installation" +
+     "\n\n" +
+     "## Usage" +
+     "\n\n" +
+     "## License" +
+     "\n\n" +
+     "## Contributing" +
+     "\n\n" +
+     "## Tests" +
+     "\n\n" +
+     "## Questions" +
+     "\n" + "GitHub Username: " + githubUsername
+     "\n" + "Email: "
+     ;
+
+};
+
 init();

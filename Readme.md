@@ -1,33 +1,37 @@
 # 07 Readme File Generator
 
-#### Project title:
+#### Project title: 
 
-Readme.md File Generator
+sample
 
-#### Description
+#### Description 
 
-This will create a Readme.md file based off of the user's responses.
+sample
 
-#### Table of Contents
+#### Table of Contents 
 
-#### Installation
 
-#### Usage
+
+#### Installation 
+
+
+
+#### Usage 
 
 node index.js
 
-#### License
+#### License 
 
-Apache License 2.0
+![Image of Angela's Badge](https://img.shields.io/static/v1?label=license&message=none%20chosen&color=green)
 
-#### Contributing
+#### Contributing 
 
-Samantha Stevenson, Lisa Smith
+sam
 
-#### Tests
+#### Tests 
 
-N/A
+n/a
 
 #### Questions
-GitHub Username: amsgwbootcamp
+GitHub Username: sample
 Image: ![Image of Angela's Badge](https://img.shields.io/static/v1?label=Angela%27s+Badge&message=This+is+my+badge&color=red)

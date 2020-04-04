@@ -2,9 +2,6 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const axios = require("axios");
-//var image = "![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)";
-//var badge = https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>
-//var badge = "https://img.shields.io/static/v1?label=Angela%27s+Badge&message=This+is+my+badge&color=red";
 var image = "![Image of Angela's Badge](https://img.shields.io/static/v1?label=Angela%27s+Badge&message=This+is+my+badge&color=red)";
 
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -23,30 +20,35 @@ function promptUser() {
     }
     ,{
       type: "input",
-      name: "project",
-      message: "What is the name of your project?"
+      name: "projectTitle",
+      message: "What is the title of your project?"
     }
-    //,
-    // {
-    //   type: "input",
-    //   name: "hobby",
-    //   message: "What is your favorite hobby?"
-    // },
-    // {
-    //   type: "input",
-    //   name: "food",
-    //   message: "What is your favorite food?"
-    // },
-    // {
-    //   type: "input",
-    //   name: "github",
-    //   message: "Enter your GitHub Username"
-    // },
-    // {
-    //   type: "input",
-    //   name: "linkedin",
-    //   message: "Enter your LinkedIn URL."
-    // }
+    ,{
+      type: "input",
+      name: "description",
+      message: "What is a brief description of your project?"
+    },
+    {
+      type: "input",
+      name: "contributing",
+      message: "Who has worked on this with you?"
+    },
+    {
+      type: "input",
+      name: "tests",
+      message: "Are there any tests for this project?"
+    },
+    {
+      type: "checkbox",
+      message: "What licenses are required?",
+      name: "licenses",
+      choices:["None","Apache License 2.0","GNU General Public License 3.0","MIT License"]
+    },
+    {
+      type: "input",
+      name: "usage",
+      message: "Enter the command to run this program"
+    }
   ]);
 }
 
@@ -81,39 +83,39 @@ async function init()
   console.log("hi");
 
   try {
-    const { githubUsername, project } = await promptUser();
+    const { githubUsername, projectTitle, description, contributing, tests, licenses, usage } = await promptUser();
     //var queryUrl = "https://api.github.com/users/" + githubUsername + "/events/public";
     //console.log(githubUsername);
     //const { email } = await axios.get(queryUrl);
     //console.log(email);
     console.log("Getting ready to write file.");  
-    return writeFileAsync("Readme.md", generateReadme(githubUsername, project));
+    return writeFileAsync("Readme.md", generateReadme(githubUsername, projectTitle, description, contributing, tests, licenses, usage));
   }
   catch (err) {
     console.log(err);
   }
 }
 
-function generateReadme(githubUsername, project)
+function generateReadme(githubUsername, projectTitle, description, contributing, tests, licenses, usage)
 {    return "# 07 Readme File Generator" + 
      "\n\n" + 
-     "#### Project title:" + project +
+     "#### Project title:" + "\n\n" + projectTitle +
      "\n\n" +
-     "#### Description" +
+     "#### Description" + "\n\n" + description +
      "\n\n" +
      "#### Table of Contents" +
      "\n\n" +
      "#### Installation" +
      "\n\n" +
-     "## Usage" +
+     "#### Usage" + "\n\n" + usage +
      "\n\n" +
-     "## License" +
+     "#### License" + "\n\n" + licenses +
      "\n\n" +
-     "## Contributing" +
+     "#### Contributing" + "\n\n" + contributing +
      "\n\n" +
-     "## Tests" +
-     "\n\n" +
-     "## Questions" +
+     "#### Tests" + "\n\n" + tests +
+     "\n\n" + 
+     "#### Questions" +
      "\n" + "GitHub Username: " + githubUsername +
      "\n" + "Image: " + image
      ;

@@ -2,29 +2,29 @@
 
 ## Project Title
 
-Sample Project
+Sample project
 
 ## Description
 
-This is a Readme.md file generator.  It will create the necessary documentation for any project based on the information provided by the user's answers from the questions they will be prompted for.  The Readme.md file willl contain a clickable Table of Contents along with badges for the license(s) chosen.  
+This is some sample text.
 
 ## Table of Contents
 
-- [07 Readme File Generator](#07%20Readme%20File%20Generator)
-* [Project Title](##Project%20Title)
-* [Description](##Description)
-* [Installation](##Installation)
-* [Usage](##Usage)
-* [License](##License)
-* [Contributors](##Contributors)
-* [Tests](##Tests)
-* [Questions](##Questions)
-+ [Github Username](Github%20Username)
-+ [Email](Email)
+- [07 Readme File Generator](#07%20readme%20file%20generator)
+* [Project Title](##project%20title)
+* [Description](##description)
+* [Installation](##installation)
+* [Usage](##usage)
+* [License](##license)
+* [Contributors](##contributors)
+* [Tests](##tests)
+* [Questions](##questions)
++ [Github Username](github%20username)
++ [Email](email)
 
 ## Installation
 
-None
+None.
 
 ## Usage
 
@@ -32,7 +32,7 @@ node index.js
 
 ## License
 
-![Image of None Badge](https://img.shields.io/static/v1?label=license&message=No%20license%20chosen&color=green)
+![Image of Apache License 2.0 Badge](https://img.shields.io/static/v1?label=license&message=Apache%20License%202.0&color=blue)
 
 
 
@@ -42,7 +42,7 @@ Samantha Stevenson, Mary Brosius
 
 ## Tests
 
-None
+No
 
 ## Questions
 

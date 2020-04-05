@@ -6,11 +6,11 @@ Sample Project
 
 #### Description 
 
-Sample Project
+This is a brief description of the project.  
 
 #### Table of Contents 
 
-
+- [07 Readme File Generator](#07%20Readme%20File%20Generator)
 
 #### Installation 
 
@@ -22,15 +22,13 @@ node index.js
 
 #### License 
 
-![Image of Apache License 2.0 Badge](https://img.shields.io/static/v1?label=license&message=Apache%20License%202.0&color=blue)
-
-![Image of MIT License Badge](https://img.shields.io/static/v1?label=license&message=MIT%30License&color=orange)
+![Image of None Badge](https://img.shields.io/static/v1?label=license&message=No%20license%20chosen&color=green)
 
 
 
 #### Contributing 
 
-Samantha Stevenson
+Samantha Stevenson, Mary Brosius
 
 #### Tests 
 
@@ -38,4 +36,4 @@ No
 
 #### Questions
 GitHub Username: amsgwbootcamp
-Image: ![Image of Angela's Badge](https://img.shields.io/static/v1?label=Angela%27s+Badge&message=This+is+my+badge&color=red)
+Email: amsgwbootcamp@gmail.com

@@ -1,23 +1,8 @@
-var searchLat;
-var searchLon;
-var currentDate;
-var counter = 1;
-//
-// Function to get the UV Index and color code it based on the index level.  
-//
-function getUVIndex()
-{
-        var queryURL = "https://api.github.com/users/amsgwbootcamp/repos";
+const axios = require("axios");
 
-    $.ajax({
-        url: queryURL,
-        method: "GET"
-    })
-    // We store all of the retrieved data inside of an object called "response"
-    .then(function(response) {
-        console.log(response);
-        }
-    )
-}
+axios
+  .get("https://api.github.com/users/JohnDaise/events/public")
+  .then(function(res) {
+    const email = res.data[0].payload.commits[0].author.email;
+  });
 
-getUVIndex();

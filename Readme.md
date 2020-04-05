@@ -6,7 +6,7 @@ Sample Project
 
 ## Description
 
-Brief Descrption
+Sample Project
 
 ## Table of Contents
 
@@ -38,7 +38,7 @@ node index.js
 
 ## Contributors
 
-Samantha Stevenson
+Samantha Stevenson, Mary Brosius
 
 ## Tests
 
@@ -46,5 +46,7 @@ No
 
 ## Questions
 
-#### GitHub Username amsgwbootcamp
-#### Email amsgwbootcamp@gmail.com
+#### GitHub Username
+amsgwbootcamp
+#### Email
+amsgwbootcamp@gmail.com

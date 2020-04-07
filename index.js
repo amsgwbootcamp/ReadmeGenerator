@@ -7,6 +7,10 @@ const noneBadge = "![Image of None Badge](https://img.shields.io/static/v1?label
 const apacheBadge = "![Image of Apache License 2.0 Badge](https://img.shields.io/static/v1?label=license&message=Apache%20License%202.0&color=blue)";
 const gnuBadge = "![Image of GNU General Public License 3.0 Badge](https://img.shields.io/static/v1?label=license&message=GNU%20General%20Public%20License%203.0&color=yellow)";
 const mitBadge = "![Image of MIT License Badge](https://img.shields.io/static/v1?label=license&message=MIT%20License&color=orange)"; 
+const githubImagetext = "";
+var Avatar = "";
+const githubImageA = `![Image of GitHubUser]`;
+var githubImageB = `{:height="36px" width="36px"}`;
 var email = "";
 var images = [];
 var imageString = "";
@@ -72,10 +76,16 @@ async function init()
       `https://api.github.com/users/${githubUsername}/events/public`
     );
     email = res.data[0].payload.commits[0].author.email;
+    gitHubAvatar = res.data[0].actor.avatar_url;
+    Avatar = gitHubAvatar.substring(0,gitHubAvatar.length-1);
+    console.log(Avatar);
+    gitHubImage = `![Image of GitHubUser](`+ Avatar +`)`;
+    console.log(gitHubAvatar);
+    console.log(gitHubImage);
     return writeFileAsync("Readme.md", generateReadme(githubUsername, projectTitle, description, installInfo, contributing, tests, license, usage, email));
   }
   catch (err) {
-    console.log(err);
+      console.log(err);
   }
 }
 
@@ -144,7 +154,9 @@ function generateReadme(githubUsername, projectTitle, description, installInfo, 
      `\n\n` + 
      `## Questions` + 
      `\n\n` + `#### GitHub Username` + `\n` + githubUsername +
-     `\n` + `#### Email` + `\n` + email
+     `\n` + `#### Email` + `\n` + email + `\n\n` +
+     `<img src="` + Avatar + `" height="36px" width="36px">`
+//     `![Image of GitHubUser](`+ gitHubAvatar + `)`
      ;
 
 };

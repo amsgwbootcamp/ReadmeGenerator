@@ -32,7 +32,7 @@ node index.js
 
 ## License
 
-![Image of None Badge](https://img.shields.io/static/v1?label=license&message=No%20license%20chosen&color=green)
+![Image of GNU General Public License 3.0 Badge](https://img.shields.io/static/v1?label=license&message=GNU%20General%20Public%20License%203.0&color=yellow)
 
 
 
@@ -47,8 +47,8 @@ None
 ## Questions
 
 #### GitHub Username
-amsgwbootcamp
+JohnDaise
 #### Email
-amsgwbootcamp@gmail.com
+jdaise@gmail.com
 
-![Image of GitHubUser](https://avatars.githubusercontent.com/u/59629198?){:height="36px" width="36px"}
+![Image of GitHubUser](https://avatars.githubusercontent.com/u/30414190?)

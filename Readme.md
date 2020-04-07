@@ -38,7 +38,7 @@ node index.js
 
 ## Contributors
 
-Samantha
+Sam
 
 ## Tests
 
@@ -47,8 +47,8 @@ None
 ## Questions
 
 #### GitHub Username
-JohnDaise
+amsgwbootcamp
 #### Email
-jdaise@gmail.com
+amsgwbootcamp@gmail.com
 
-![Image of GitHubUser](https://avatars.githubusercontent.com/u/30414190?)
+<img src="https://avatars.githubusercontent.com/u/59629198" height="36px" width="36px">

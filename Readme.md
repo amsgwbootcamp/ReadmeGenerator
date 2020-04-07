@@ -2,11 +2,11 @@
 
 ## Project Title
 
-Sample Project
+Sample
 
 ## Description
 
-This is a brief description of my project.
+Sample
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ This is a brief description of my project.
 
 ## Installation
 
-You will need to copy the code and place in the same directory as the root. 
+None
 
 ## Usage
 
@@ -32,13 +32,13 @@ node index.js
 
 ## License
 
-![Image of MIT License Badge](https://img.shields.io/static/v1?label=license&message=MIT%20License&color=orange)
+![Image of None Badge](https://img.shields.io/static/v1?label=license&message=No%20license%20chosen&color=green)
 
 
 
 ## Contributors
 
-Samantha Stevenson
+Samantha
 
 ## Tests
 
@@ -50,3 +50,5 @@ None
 amsgwbootcamp
 #### Email
 amsgwbootcamp@gmail.com
+
+![Image of GitHubUser](https://avatars.githubusercontent.com/u/59629198?){:height="36px" width="36px"}

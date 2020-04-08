@@ -2,11 +2,11 @@
 
 ## Project Title
 
-Sample
+Readme File Generator
 
 ## Description
 
-Sample
+This will generate a readme.md file that can be included with the user's project in GitHub.  The user will be prompted with a series of questions.  Based on their responses, badges will be created based on the type of license that the user selected.  Instructions will be included as well as any packages that may need to be installed.  A clickable table of contents will be generated and included in the file as well.  Their GitHub username, email and avatar will be included with the file.  
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ Sample
 
 ## Installation
 
-None
+Please make sure that you have the following packages installed using npm -- inquirer, util and axios
 
 ## Usage
 
@@ -32,13 +32,13 @@ node index.js
 
 ## License
 
-![Image of GNU General Public License 3.0 Badge](https://img.shields.io/static/v1?label=license&message=GNU%20General%20Public%20License%203.0&color=yellow)
+![Image of None Badge](https://img.shields.io/static/v1?label=license&message=No%20license%20chosen&color=green)
 
 
 
 ## Contributors
 
-Sam
+Just me, myself and I
 
 ## Tests
 

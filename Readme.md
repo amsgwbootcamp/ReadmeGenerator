@@ -2,11 +2,11 @@
 
 ## Project Title
 
-Readme File Generator
+Sample
 
 ## Description
 
-This will generate a readme.md file that can be included with the user's project in GitHub.  The user will be prompted with a series of questions.  Based on their responses, badges will be created based on the type of license that the user selected.  Instructions will be included as well as any packages that may need to be installed.  A clickable table of contents will be generated and included in the file as well.  Their GitHub username, email and avatar will be included with the file.  
+Sample
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ This will generate a readme.md file that can be included with the user's project
 
 ## Installation
 
-Please make sure that you have the following packages installed using npm -- inquirer, util and axios
+None
 
 ## Usage
 
@@ -34,21 +34,27 @@ node index.js
 
 ![Image of None Badge](https://img.shields.io/static/v1?label=license&message=No%20license%20chosen&color=green)
 
+![Image of Apache License 2.0 Badge](https://img.shields.io/static/v1?label=license&message=Apache%20License%202.0&color=blue)
+
+![Image of GNU General Public License 3.0 Badge](https://img.shields.io/static/v1?label=license&message=GNU%20General%20Public%20License%203.0&color=yellow)
+
+![Image of MIT License Badge](https://img.shields.io/static/v1?label=license&message=MIT%20License&color=orange)
+
 
 
 ## Contributors
 
-Just me, myself and I
+No one
 
 ## Tests
 
-None
+No
 
 ## Questions
 
 #### GitHub Username
-amsgwbootcamp
+JohnDaise
 #### Email
-amsgwbootcamp@gmail.com
+jdaise@gmail.com
 
-<img src="https://avatars.githubusercontent.com/u/59629198" height="36px" width="36px">
+<img src="https://avatars.githubusercontent.com/u/30414190" height="36px" width="36px">
